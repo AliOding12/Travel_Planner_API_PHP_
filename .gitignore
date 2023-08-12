@@ -1,26 +1,5 @@
-# Environment files
 .env
-
-# Vendor directory (managed by Composer)
 vendor/
-
-# SQLite database
+logs/*
 storage/travel.db
-
-# Logs
-logs/
-*.log
-
-# Cache files
-cache/
-
-# IDE and editor files
-.idea/
-.vscode/
-
-# Composer lock file (optional, commit if you want reproducible builds)
-# composer.lock
-
-# Testing artifacts
-phpunit.xml
-coverage/
+bashscript.sh
