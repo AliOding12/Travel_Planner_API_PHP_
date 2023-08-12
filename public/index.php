@@ -12,7 +12,7 @@ $dotenv->load();
 // Set JSON content type
 header('Content-Type: application/json; charset=utf-8');
 
-// Basic error handling
+// can do a better job offcourse with error handling than this following crab
 try {
     // Initialize router
     $router = new Router();
