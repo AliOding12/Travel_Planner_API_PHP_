@@ -23,7 +23,7 @@ class SearchHistory
     }
 
     public function getRecentSearches(int $limit = 10): array
-    {
+    {   //this query isnot optimized or fast in any-way one thing to notice with vast amnount we tend to perform indexing of just data
         $stmt = $this->pdo->prepare('
             SELECT destination, user_id, timestamp
             FROM search_history
