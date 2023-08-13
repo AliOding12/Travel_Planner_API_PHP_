@@ -9,6 +9,7 @@ class Database
     public function __construct()
     {
         try {
+            //for a more vast version of this project add the dbs here 
             $dbPath = __DIR__ . '/../../storage/travel.db';
             $this->pdo = new \PDO("sqlite:$dbPath");
             $this->pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
