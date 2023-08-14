@@ -29,7 +29,7 @@ class ApiWrapper
         $this->eventsTransformer = new EventsTransformer();
     }
 
-   
+        //there has to be a better way then what i have done in following manner lets note it for future reference
     public function getDestinationData(string $city): array
     {
         $response = [
