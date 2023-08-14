@@ -10,7 +10,7 @@ class Router
     private $routes = [];
 
     public function __construct()
-    {
+    {   //add further routes if needed here 
        
         $this->addRoute('GET', '/destination/([a-zA-Z0-9-]+)', [$this, 'handleDestination']);
     }
