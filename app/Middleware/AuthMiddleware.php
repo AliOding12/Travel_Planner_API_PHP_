@@ -3,7 +3,7 @@
 namespace App\Middleware;
 
 use App\Exceptions\InvalidRequestException;
-
+//donot add a separate JWT based one herjust create another file for it in the middleware directory 
 class AuthMiddleware
 {
     private $apiKey;
