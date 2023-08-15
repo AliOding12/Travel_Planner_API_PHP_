@@ -13,7 +13,7 @@ class WeatherClient
     private $cacheManager;
 
     public function __construct()
-    {
+    {   //check the url valid or not 
         $this->client = new Client(['base_uri' => 'https://api.openweathermap.org/data/2.5/']);
         $this->apiKey = (require __DIR__ . '/../../config/api_keys.php')['openweathermap'];
         $this->cacheManager = new CacheManager();
