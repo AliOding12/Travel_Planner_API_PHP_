@@ -13,7 +13,7 @@ class HotelClient
     private $cacheManager;
 
     public function __construct()
-    {
+    {   //check URL validity 
         $this->client = new Client(['base_uri' => 'https://hotels4.p.rapidapi.com/']);
         $this->apiKey = (require __DIR__ . '/../../config/api_keys.php')['expedia'];
         $this->cacheManager = new CacheManager();
