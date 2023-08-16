@@ -16,9 +16,7 @@ class Logger
         $this->logger->pushHandler(new StreamHandler($logPath, MonologLogger::DEBUG));
     }
 
-    /**
-     * Log an info message
-     */
+   //i dont know why am i logging an info message like this but okay
     public function info(string $message, array $context = []): void
     {
         $this->logger->info($message, $context);
