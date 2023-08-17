@@ -41,7 +41,7 @@ class CacheManager
         $stmt->execute([$key, json_encode($data), $expiresAt]);
     }
 
-    
+    // just a example function of delete surely requires more work on it 
     public function delete(string $key): void
     {
         $stmt = $this->pdo->prepare('DELETE FROM cache WHERE key = ?');
