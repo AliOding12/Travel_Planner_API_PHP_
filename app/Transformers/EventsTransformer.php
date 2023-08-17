@@ -4,7 +4,7 @@ namespace App\Transformers;
 
 class EventsTransformer
 {
-
+// for future and a bigger picture of such api server i tend to create a utils file and store all these transformers there if you can please contribute
     public function transform(array $data): array
     {
         $events = [];
