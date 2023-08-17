@@ -13,7 +13,7 @@ class EventsClient
     private $cacheManager;
 
     public function __construct()
-    {
+    { //make sure the URL works at this time it works if not then update it according to your need!
         $this->client = new Client(['base_uri' => 'https://www.eventbriteapi.com/v3/']);
         $this->apiKey = (require __DIR__ . '/../../config/api_keys.php')['eventbrite'];
         $this->cacheManager = new CacheManager();
